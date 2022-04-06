@@ -1,0 +1,180 @@
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos básicos */
+body {
+   background: var(--preta); 
+   font-family: 'Arial', Times, serif;
+   color: white
+}
+
+header .container {
+    display: flex;
+    flex-direction: row; /*by default já é assim*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-top: 5px;
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 15px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/*filme principal*/
+
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)) 100%, url("capa-dunkirk.jpg");
+
+    height:400px;
+    background-size:cover;
+ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: 'Arial', Times, serif;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+/*WRAPPER = ENVELOPAR
+O objetivo da calsse container é 
+justamente envelopar tudo que está dentro dela, vários elementos.
+Fica mais fácil de manipular os elementos filhos.
+O tratamento que o pai (container) recebe, se replica aos filhos dele.
+Quando queremos movimentar todos os elementos, manipulo toda a caixa.
+*/
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.box-filme:hover {
+    transition: transform 0.3s;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
+
+.container .informacoes{
+    background: #969ca5;
+    color: #1c1c1c;
+    margin: 30px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 6px #0e1d2f;
+    padding: 64px;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+}
+
+.perfil {
+    display: flex;
+}
+  
+.perfil-foto {
+    border-radius: 10px;
+    max-height: 200px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.perfil-foto:hover {
+    transition: transform 0.3s;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+  
+.nome-diretor {
+    width: 70%;
+    margin-left: 50px;
+}
+  
+.nome-diretor h3 {
+    font-weight: 700;
+    font-size: 30px;
+}
+  
+.subtitulo {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.sobre {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 15px;
+}
