@@ -125,11 +125,13 @@ Quando queremos movimentar todos os elementos, manipulo toda a caixa.
     margin-top: 5px;
 }
 
-.container .informacoes{
+.container .informacoes {
     background: #969ca5;
     color: #1c1c1c;
     margin: 30px;
-    border-radius: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
     box-shadow: 6px 6px 6px #0e1d2f;
     padding: 64px;
 }
